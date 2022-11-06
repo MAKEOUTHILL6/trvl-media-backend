@@ -1,9 +1,9 @@
 const express = require('express');
-const {InitializeDatabase} = require('./config/database');
-const {errorHandler} = require('./middlewares/errorHandler');
-const routes = require('./router');
+const {InitializeDatabase} = require('./src/config/database');
+const {errorHandler} = require('./src/middlewares/errorHandler');
+const routes = require('./src/router');
 const cors = require('cors');
-const { auth } = require('./middlewares/authMiddleware');
+const { auth } = require('./src/middlewares/authMiddleware');
 
 const app = express();
 const port = 3030;
